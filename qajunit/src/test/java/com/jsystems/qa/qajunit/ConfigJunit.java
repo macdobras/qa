@@ -27,4 +27,10 @@ public class ConfigJunit  {
         System.out.println("============= AfterEach ============= ");
     }
 
+
+
+//    komentarz testowy - zmiana pod webhook'a w GitHub
+
+
+
 }
