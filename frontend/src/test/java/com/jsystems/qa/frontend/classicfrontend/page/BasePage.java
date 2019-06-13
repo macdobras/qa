@@ -1,4 +1,4 @@
-package com.jsystems.qa.frontend.page;
+package com.jsystems.qa.frontend.classicfrontend.page;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
