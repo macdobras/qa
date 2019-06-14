@@ -9,14 +9,36 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import java.net.URISyntaxException;
+import java.nio.file.Paths;
 import java.util.concurrent.TimeUnit;
 
 public class ConfigFrontend {
 
     WebDriver driver;
 
+//    String chromePath;
+//    String fireFoxPath;
+//
+//    {
+//        try {
+//            chromePath = Paths.get(getClass().getClassLoader()
+//                    .getResource("drivers/chromedriver.exe")
+//                    .toURI()).toFile().getAbsolutePath();
+//            fireFoxPath = Paths.get(getClass().getClassLoader()
+//                    .getResource("drivers/geckodriver.exe")
+//                    .toURI()).toFile().getAbsolutePath();
+//        } catch (URISyntaxException e) {
+//
+//            e.printStackTrace();
+//        }
+//    }
+
     @BeforeAll
     public static void setUpAll() {
+
+//        WebDriverManager.chromedriver().setup();
+
 
 //      System.setProperty("webdriver.chrome.driver", "D:\\drivers\\chromedriver.exe");
 //        System.setProperty("webdriver.chrome.driver", ClassLoader.getSystemClassLoader()
@@ -29,6 +51,9 @@ public class ConfigFrontend {
 
     @BeforeEach
     public void setUpEach(){
+
+//        System.setProperty("webdriver.chrome.driver", chromePath);
+//        System.setProperty("webdriver.gecko.driver", fireFoxPath);
 
         String browser = Configuration.getBROWSER();
 

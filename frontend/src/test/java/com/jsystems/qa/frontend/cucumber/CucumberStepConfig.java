@@ -10,14 +10,34 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import java.net.URISyntaxException;
+import java.nio.file.Paths;
 import java.util.concurrent.TimeUnit;
 
 public class CucumberStepConfig {
 
     WebDriver driver;
 
+//    String chromePath;
+//    String fireFoxPath;
+//
+//    {
+//        try {
+//            chromePath = Paths.get(getClass().getClassLoader()
+//                    .getResource("drivers/chromedriver.exe")
+//                    .toURI()).toFile().getAbsolutePath();
+//            fireFoxPath = Paths.get(getClass().getClassLoader()
+//                    .getResource("drivers/geckodriver.exe")
+//                    .toURI()).toFile().getAbsolutePath();
+//        } catch (URISyntaxException e) {
+//            e.printStackTrace();
+//        }
+//    }
+
     @Before
     public static void setUpAll() {
+
+//        WebDriverManager.chromedriver().setup();
 
         System.setProperty("webdriver.geckodriver", "D:\\drivers\\geckodriver.exe");
 
